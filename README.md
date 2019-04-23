@@ -54,6 +54,19 @@ In `tslint.json`:
   "extends": "@fusionworks/ts-lint"
 }
 ```
+### Example of use
+```json
+{
+  "extends": "@fusionworks/ts-lint/angular",
+  "linterOptions": {
+    "exclude": [
+      "e2e"
+    ]
+  },
+  "rules": {}
+}
+```
+
 
 ### Rules
 
