@@ -1,6 +1,6 @@
 {
   "name": "@fusionworks/ts-lint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "All tslint configuraitons for fusionworks bundled in here.",
   "main": "tslint.js",
