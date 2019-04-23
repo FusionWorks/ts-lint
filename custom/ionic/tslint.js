@@ -1,10 +1,11 @@
-const path = require('path');
+const { rulesDirectory, rules } = require('../tslint');
 
 module.exports = {
   rulesDirectory: [
-    path.join(path.dirname(require.resolve('../tslint.js')), './'),
+    ...rulesDirectory,
   ],
   rules: {
+    ...rules,
     // New rules in here
     'no-duplicate-imports': true,
     'no-duplicate-switch-case': true,

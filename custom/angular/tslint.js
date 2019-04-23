@@ -1,10 +1,12 @@
-const path = require('path');
+const { rulesDirectory, rules } = require('../tslint');
 
 module.exports = {
   rulesDirectory: [
-    path.join(path.dirname(require.resolve('../tslint.js')), './'),
+    ...rulesDirectory,
   ],
   rules: {
+    ...rules,
+    // New rules in here
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
