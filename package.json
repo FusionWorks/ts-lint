@@ -7,7 +7,6 @@
   "scripts": {
     "build": "node lib/create_dist",
     "patch": "npm version patch -m \"[skip travis] Release version: %s\"",
-    "postbuild": "node lib/copy_package && node lib/copy_readme",
     "prerelease": "npm whoami && npm run patch && npm run build",
     "release": "npm publish dist --access public"
   },
