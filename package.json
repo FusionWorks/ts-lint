@@ -1,0 +1,42 @@
+{
+  "name": "@fusionworks/tslint",
+  "version": "0.0.0",
+  "private": false,
+  "description": "All tslint configuraitons for fusionworks bundled in here.",
+  "main": "tslint.js",
+  "scripts": {
+    "build": "node lib/create_dist",
+    "patch": "npm version patch -m \"[skip travis] Release version: %s\"",
+    "postbuild": "node lib/copy_package && node lib/copy_readme",
+    "prerelease": "npm whoami && npm run patch && npm run build",
+    "release": "npm publish dist --access public"
+  },
+  "homepage": "https://github.com/FusionWorks/tslint",
+  "repository": {
+    "url": "https://github.com/FusionWorks/tslint",
+    "type": "git"
+  },
+  "keywords": [
+    "npm",
+    "tsc",
+    "airbnb",
+    "tslint",
+    "angular",
+    "vue",
+    "react",
+    "lint",
+    "typescript"
+  ],
+  "author": "GrigoreMe",
+  "license": "ISC",
+  "dependencies": {
+    "tslint-config-airbnb": "^5.11.1"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "peerDependencies": {
+    "tslint": "^5.11.0"
+  }
+}
