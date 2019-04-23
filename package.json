@@ -1,5 +1,5 @@
 {
-  "name": "@fusionworks/tslint",
+  "name": "@fusionworks/ts-lint",
   "version": "0.0.1",
   "private": false,
   "description": "All tslint configuraitons for fusionworks bundled in here.",
@@ -10,9 +10,9 @@
     "prerelease": "npm whoami && npm run patch && npm run build",
     "release": "npm publish dist --access public"
   },
-  "homepage": "https://github.com/FusionWorks/tslint",
+  "homepage": "https://github.com/FusionWorks/ts-lint",
   "repository": {
-    "url": "https://github.com/FusionWorks/tslint",
+    "url": "https://github.com/FusionWorks/ts-lint",
     "type": "git"
   },
   "keywords": [
