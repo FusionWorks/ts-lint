@@ -5,7 +5,10 @@ module.exports = {
     path.join(path.dirname(require.resolve('tslint-config-airbnb')), './'),
   ],
   rules: {
-    "array-type": true,
+    "array-type": [
+      true,
+      "array-simple",
+    ],
     "arrow-parens": true,
     "deprecation": {
       "severity": "warn"
@@ -27,7 +30,7 @@ module.exports = {
     ],
     "member-access": [
       true,
-      "no-public",
+      "check-accessor",
     ],
     "member-ordering": [
       true, {
