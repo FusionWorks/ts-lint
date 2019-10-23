@@ -33,5 +33,9 @@ module.exports = {
       true,
       "array",
     ],
+    "semicolon": [
+      true,
+      "always"
+    ]
   },
 };
