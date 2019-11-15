@@ -17,25 +17,30 @@ module.exports = {
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "trailing-comma": [
-      true,
-      {
-        "multiline": {
-          "objects": "always",
-          "arrays": "always",
-          "functions": "always",
-          "typeLiterals": "always"
-        },
-        "esSpecCompliant": true
-      }
-    ],
     "array-type": [
       true,
       "array",
     ],
     "semicolon": [
       true,
-      "always"
-    ]
+      "always",
+      "ignore-bound-class-methods",
+      "ignore-interfaces",
+    ],
+    "no-empty": [
+      false
+    ],
+    "whitespace": [
+      true,
+      "check-module"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never",
+        "esSpecCompliant": true
+      }
+    ],
   },
 };
