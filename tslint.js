@@ -100,5 +100,11 @@ module.exports = {
       }
     ],
     "no-debugger": true,
+    "prefer-const": [
+      true,
+      {
+        "destructuring": "all"
+      }
+    ],
   },
 };
