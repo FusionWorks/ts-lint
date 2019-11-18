@@ -42,5 +42,10 @@ module.exports = {
         "esSpecCompliant": true
       }
     ],
+    "import-blacklist": [
+      true,
+      "rxjs",
+      "ngx-bootstrap"
+    ],
   },
 };

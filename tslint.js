@@ -106,5 +106,6 @@ module.exports = {
         "destructuring": "all"
       }
     ],
+    "no-unused-expression": true
   },
 };
